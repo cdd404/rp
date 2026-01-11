@@ -1,0 +1,17 @@
+a <- 15
+b <- 4
+add <- a + b
+sub <- a - b
+mul <- a * b
+div <- a / b
+int_div <- a %/% b
+mod <- a %% b
+exp <- a ^ b
+
+cat("a + b =", add, "\n")
+cat("a - b =", sub, "\n")
+cat("a * b =", mul, "\n")
+cat("a / b =", div, "\n")
+cat("a %/% b =", int_div, "\n")
+cat("a %% b =", mod, "\n")
+cat("a ^ b =", exp, "\n")
