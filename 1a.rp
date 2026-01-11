@@ -1,0 +1,11 @@
+d <- 3.14159
+i <- 42L
+l <- TRUE
+cmp <- 5 + 2i
+c <- "Hello, R!"
+
+cat("d =", d, " | Type:", typeof(d), "\n")
+cat("i =", i, " | Type:", typeof(i), "\n")
+cat("l =", l, " | Type:", typeof(l), "\n")
+cat("cmp =", cmp, " | Type:", typeof(cmp), "\n")
+cat("c =", c, " | Type:", typeof(c), "\n")
