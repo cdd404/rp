@@ -1,1 +1,8 @@
 
+mat1 <- matrix(1:9, nrow = 3, ncol = 3)
+print("Matrix 1:")
+print(mat1)
+
+mat2 <- matrix(1:9, nrow = 3, byrow = TRUE)
+print("Matrix 2 (filled by row):")
+print(mat2)
