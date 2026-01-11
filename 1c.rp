@@ -6,3 +6,14 @@ print(seq2)
 
 seq3 <- seq(0, 1, length.out = 5)
 print(seq3)
+num_vec <- c(10, 20, 30, 40, 50)
+print(num_vec)
+
+char_vec <- c("R", "Python", "Java")
+print(char_vec)
+
+log_vec <- c(TRUE, FALSE, TRUE, TRUE)
+print(log_vec)
+
+combined_vec <- c(seq1, seq2)
+print(combined_vec)
