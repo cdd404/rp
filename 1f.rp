@@ -1,0 +1,18 @@
+vec <- c(10, 20, 30, 40, 50)
+print("Vector:")
+print(vec)
+print(vec[2])
+print(vec[2:4])
+
+mat <- matrix(1:9, nrow = 3, byrow = TRUE)
+print("Matrix:")
+print(mat)
+print(mat[2, 3])
+print(mat[2, ])
+print(mat[, 3])
+
+arr <- array(1:24, dim = c(3, 4, 2))
+print("Array:")
+print(arr)
+print(arr[2, 3, 1])
+print(arr[2, , 1])
