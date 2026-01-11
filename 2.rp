@@ -1,0 +1,30 @@
+revenue <- c(50, 60, 55, 70, 65, 80, 75, 90, 85, 100, 95, 110)
+expenses <- c(30, 35, 33, 40, 38, 45, 42, 50, 48, 55, 52, 60)
+months <- month.abb
+
+profit <- revenue - expenses
+tax_rate <- 0.30
+profit_after_tax <- profit * (1 - tax_rate)
+profit_margin <- profit_after_tax / revenue
+mean_pat <- mean(profit_after_tax)
+
+good_months <- profit_after_tax > mean_pat
+bad_months <- profit_after_tax < mean_pat
+best_month <- months[which.max(profit_after_tax)]
+worst_month <- months[which.min(profit_after_tax)]
+
+df <- data.frame(
+  Month = months,
+  Revenue = revenue,
+  Expenses = expenses,
+  Profit = profit,
+  Profit_After_Tax = profit_after_tax,
+  Profit_Margin = round(profit_margin, 2),
+  Good_Month = good_months,
+  Bad_Month = bad_months
+)
+
+print(df)
+cat("\nYearly Average Profit After Tax:", round(mean_pat, 2), "\n")
+cat("Best Month:", best_month, "\n")
+cat("Worst Month:", worst_month, "\n")
