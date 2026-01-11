@@ -1,0 +1,20 @@
+# Correlation coefficients
+pearson_corr <- cor(mammals$body, mammals$brain, method = "pearson")
+spearman_corr <- cor(mammals$body, mammals$brain, method = "spearman")
+
+cat("Pearson Correlation:", pearson_corr, "\n")
+cat("Spearman Correlation:", spearman_corr, "\n")
+
+# Scatter plot
+plot(mammals$body, mammals$brain,
+     xlab = "Body Weight",
+     ylab = "Brain Weight",
+     main = "Mammals: Body Weight vs Brain Weight",
+     pch = 19, col = "blue")
+
+# Log-log plot
+plot(log(mammals$body), log(mammals$brain),
+     xlab = "log(Body Weight)",
+     ylab = "log(Brain Weight)",
+     main = "Log-Log Plot: Body Weight vs Brain Weight",
+     pch = 19, col = "red")
